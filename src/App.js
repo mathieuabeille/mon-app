@@ -1,10 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import './stylesheets/App.css';
+import Home from  './pages/home.js';
+
 
 function App() {
   return (
     <div className="App">
-      Hello World
+      < Home />
     </div>
   );
 }
