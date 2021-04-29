@@ -1,0 +1,62 @@
+.navigation{
+  width: 100%;
+  height: 10vh;
+  position: sticky;
+  top: 0px;
+  background: #F7FAFC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .7s ease-in;
+  z-index: 1000;
+  border-radius: 0px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 0.84rem;
+  background: #F7FAFC;
+}
+  .logo{
+    height: 1.953rem;
+    padding-right: 2px;
+    padding-left: 2px;
+
+  }
+  .navigation:hover{
+    opacity: 0.8;
+    transition: all .2s ease-in;
+  }
+
+
+.navigation-scrolled{
+  width: 100%;
+  height: 5vh;
+  position: sticky;
+  top: 0px;
+  background: #F7FAFC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .7s ease-in;
+  z-index: 1000;
+  border-radius: 0px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-size: 0.84rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: all .2s ease-in;
+
+}
+
+.navigation-scrolled .logo{
+    height: 1rem;
+    transition: all .2s ease-in;
+    padding-right: 2px;
+    padding-left: 2px;
+  }
+.navigation-scrolled .navigation{
+    opacity: 0.8;
+    transition: all .2s ease-in;
+  }
+
+

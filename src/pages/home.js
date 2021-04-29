@@ -4,6 +4,9 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { fetchDatas } from '../actions/index.js'
 import Hero from '../containers/hero.js'
+import ContentLeft from '../containers/contentLeft.js'
+import ContentRight from '../containers/contentRight.js'
+import DotsNavigation from '../containers/dotnavigation.js'
 
 
 class Home extends Component{
@@ -15,9 +18,22 @@ componentWillMount() {
  loading() {
   if(this.props.datas.records) {
         return (
+        <div>
+
+        <DotsNavigation
+          datas={this.props.datas}
+         />
         <Hero
           datas={this.props.datas}
          />
+                 <ContentLeft
+          datas={this.props.datas}
+         />
+                 <ContentRight
+          datas={this.props.datas}
+         />
+         </div>
+
         )
   }
   else {
