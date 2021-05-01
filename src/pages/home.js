@@ -7,6 +7,8 @@ import Hero from '../containers/hero.js'
 import ContentLeft from '../containers/contentLeft.js'
 import ContentRight from '../containers/contentRight.js'
 import DotsNavigation from '../containers/dotnavigation.js'
+import logo from '../assets/logo.png';
+import { InlineWidget } from "react-calendly";
 
 
 class Home extends Component{
@@ -32,13 +34,23 @@ componentWillMount() {
                  <ContentRight
           datas={this.props.datas}
          />
+          <InlineWidget url="https://calendly.com/mathieu-abeille/30-minutes-growth-avec-mathieu-prasith" />
+
          </div>
 
         )
   }
   else {
       return (
-        <div>Loading...</div>
+        <div
+         className='loading'
+        >
+        <img
+        src={logo}
+        className='App-logo'
+        alt='Logo Napoleon Agency'
+        />
+        </div>
         )
     }
  }

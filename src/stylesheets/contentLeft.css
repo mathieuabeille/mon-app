@@ -1,34 +1,45 @@
-
-
   .benefit-content-left {
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     height: 90vh;
     height: 90vh;
-    width: 100vw;
+    width: 100%;
     background-color:#F7FAFC;
     display: flex;
-    width: 90vw;
-    margin: auto;
     animation: 40s zoom-background infinite cubic-bezier(1,0,.75,1) alternate;
     background-size: cover;
+  }
+@media only screen and (min-width: 600px) {
+.benefit-content-left {
+
+    flex-direction: row;
 
   }
+}
+
+
+
 
   .benefit-text-left{
-    height: 80vh;
-    width: 100vw;
-    padding: 3rem;
+    height: 100%;
+    width: 100%;
     margin: auto;
     display:flex;
     justify-content: center;
     flex-direction: column;
     color: #1B202D;
     font-size: 1.25rem;
-
-
   }
 
+.benefit-text-left   h3{
+    font-size: 1.25rem;
+    font-weight: 800;
+    opacity: 0.7;
+    color: #1B202D;
+    text-shadow: 0 0 25px rgba(255,255,255,0.3);
+}
+
+@media only screen and (min-width: 600px) {
 .benefit-text-left   h3{
     font-size: 4.768rem;
     font-weight: 800;
@@ -36,6 +47,9 @@
     color: #1B202D;
     text-shadow: 0 0 25px rgba(255,255,255,0.3);
 }
+}
+
+
       .benefit-text-left h3:hover{
     color: #1B202D;
     opacity: 0.9;
@@ -52,15 +66,26 @@ font-size: 1.25rem;
   }
 
   .benefit-illustration-left{
-    height: 20vh;
+    height: 5px;
     margin: auto;
     display:flex;
     align-items: center;
     justify-content: center;
   }
 
+  .illustration{
+    height: 100px;
+
+  }
 
 
+
+@media only screen and (min-width: 600px) {
+  .illustration{
+    height: 20vh;
+
+  }
+}
 
 
 

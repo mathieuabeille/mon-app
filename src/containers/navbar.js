@@ -1,6 +1,6 @@
 import React,{Component, useEffect } from 'react';
 import '../stylesheets/navbar.css';
-
+import logo from '../assets/logo.png';
 
 
 
@@ -20,15 +20,12 @@ function NavBar() {
   return(
     <div className="navigation" >
       Napoleon    <img
-        src="https://www.flaticon.com/svg/vstatic/svg/1/1438.svg?token=exp=1619723703~hmac=e8be23430f59ef71f0e80fa2309dd926"
+        src={logo}
         className='logo'
         alt='Logo Napoleon Agency'
       />    Agency
     </div>
     )
   };
-
-
-
 
 export default NavBar;

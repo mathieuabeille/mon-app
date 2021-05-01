@@ -1,7 +1,6 @@
 .DotsNavigation{
   width: 5vw;
   height: 0vh;
-  padding-left: 20px;
   position: sticky;
   top: 300px;
   transition: all .7s ease-in;
