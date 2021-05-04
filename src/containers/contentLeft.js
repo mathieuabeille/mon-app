@@ -4,6 +4,7 @@ import illustration from '../assets/illustrations/02.png';
 import ScrollTrigger from 'react-scroll-trigger';
 
 
+
 class ContentLeft extends Component{
    constructor(props) {
     super(props);
@@ -24,7 +25,8 @@ class ContentLeft extends Component{
   render() {
     const { visible } = this.state;
     return(
-      <div>
+      <ScrollTrigger onEnter={()=>this.onEnterViewport} onExit={()=>this.onExitViewport}>
+      <div className={this.state.visible ? 'visible' : 'invisible'}>
       {this.props.datas.records.filter(item => item.fields.Name === "leftValue").map(item => (
               <div
                 key={item.fields.H1}
@@ -51,6 +53,8 @@ class ContentLeft extends Component{
       </div>
      ))}
       </div>
+      </ScrollTrigger>
+
     );
 }
 

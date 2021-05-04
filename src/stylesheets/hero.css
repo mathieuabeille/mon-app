@@ -116,7 +116,7 @@ h2{
   color: #F7FAFC;
   padding: 0.64rem 1.25rem;
   border-radius: 5px;
-  background: #3182ce;
+  background: #5899E2;
   font-size: 1rem;
   font-weight:600;
   transition: background 0.3s ease;
@@ -124,7 +124,7 @@ h2{
 }
 
 .btn-yellow:hover {
-  background: #3182ce;
+  background: #5899E2;
   transition: background 0.3s ease;
   box-shadow: 0 0 30px rgba(49, 130, 206,0.5);
 
