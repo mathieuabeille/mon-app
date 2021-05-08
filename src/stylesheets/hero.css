@@ -1,59 +1,45 @@
 .hero {
   background: #F7FAFC;
   color: #1B202D;
-  height: 80vh;
-  margin-bottom: 20vh;
   display: flex;
-  z-index: 100;
+  height: 92vh;
+  width: 66vw;
+  margin: auto;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.btn-flat {
-  color: #02A3FF;
-  padding: 8px 24px;
-  border-radius: 8px;
-  background: white;
-  cursor: pointer;
-  transition: background 0.3s ease;
-  background: #F5FAFF;
-
-}
-
-.btn-flat:hover {
-  background: #E1F2FF;
-}
 
 
 h1{
   display: flex;
   flex-direction: column;
   color: #F7FAFC;
-  font-size: 2.441rem;
+  font-size: 1rem;
   text-align: center;
   font-weight: 600;
 }
 
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
 h1{
-  font-size: 3.815rem;
+  font-size: 3.052rem;
 }
 }
 
 h1 span {
-  font-size: 3.815rem;
+
+  font-size: 2.441rem;
   text-align: center;
   font-weight: 900;
   display: flex;
   flex-direction: column;
   }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
 h1 span{
-  font-size: ;
-     font-size: 14.552rem;
+     font-size: 9.313rem;
 
 }
 }
@@ -100,35 +86,7 @@ h2{
 }
 
 
-.btn-yellow {
-  color: #F7FAFC;
-  padding: 0.41rem 0.64rem;
-  border-radius: 5px;
-  background: #3182ce;
-  font-size: 0.8rem;
-  font-weight:600;
-    cursor: pointer;
 
-  transition: background 0.3s ease;
-}
-@media only screen and (min-width: 600px) {
-.btn-yellow {
-  color: #F7FAFC;
-  padding: 0.64rem 1.25rem;
-  border-radius: 5px;
-  background: #5899E2;
-  font-size: 1rem;
-  font-weight:600;
-  transition: background 0.3s ease;
-}
-}
-
-.btn-yellow:hover {
-  background: #5899E2;
-  transition: background 0.3s ease;
-  box-shadow: 0 0 30px rgba(49, 130, 206,0.5);
-
-}
 
 @keyframes glitch-animation-1 {
   0% {

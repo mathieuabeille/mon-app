@@ -5,10 +5,11 @@ import { connect } from 'react-redux';
 import { fetchDatas } from '../actions/index.js'
 import Hero from '../containers/hero.js'
 import ContentLeft from '../containers/contentLeft.js'
+import Description from '../containers/description.js'
 import ContentRight from '../containers/contentRight.js'
+import Calendly from '../containers/calendly.js'
 import DotsNavigation from '../containers/dotnavigation.js'
 import logo from '../assets/logo.png';
-import { InlineWidget } from "react-calendly";
 
 
 class Home extends Component{
@@ -21,23 +22,13 @@ componentWillMount() {
   if(this.props.datas.records) {
         return (
         <div>
-
-        <DotsNavigation
-          datas={this.props.datas}
-         />
-        <Hero
-          datas={this.props.datas}
-         />
-                 <ContentLeft
-          datas={this.props.datas}
-         />
-                 <ContentRight
-          datas={this.props.datas}
-         />
-          <InlineWidget url="https://calendly.com/mathieu-abeille/30-minutes-growth-avec-mathieu-prasith" />
-
+          <Hero
+            datas={this.props.datas}
+           />
+          <Description
+            datas={this.props.datas}
+           />
          </div>
-
         )
   }
   else {

@@ -1,11 +1,10 @@
 import React,{Component, useEffect } from 'react';
 import '../stylesheets/navbar.css';
 import logo from '../assets/logo.png';
-
+import { Link, NavLink } from 'react-router-dom';
 
 
 function NavBar() {
-
 
   const handleScroll = () => {
     if (window.scrollY > 350) {
@@ -19,11 +18,24 @@ function NavBar() {
 
   return(
     <div className="navigation" >
-      Napoleon    <img
-        src={logo}
-        className='logo'
-        alt='Logo Napoleon Agency'
-      />    Agency
+
+      <div className="logo-text">
+        <Link to={`/home`}>
+        Napoleon    <img
+          src={logo}
+          className='logo'
+          alt='Logo Napoleon Agency'
+        />    Agency
+        </Link>
+      </div>
+      <div>
+        <NavLink to={`/home`} className="link" activeClassName="active">
+          Home
+        </NavLink>
+        <NavLink to={`/growth`} className="link" activeClassName="active">
+          Growth
+        </NavLink>
+      </div>
     </div>
     )
   };

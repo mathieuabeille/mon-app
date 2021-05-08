@@ -1,0 +1,32 @@
+.description{
+  width: 66%;
+  margin: auto;
+  font-weight: 600;
+  padding-bottom: 10rem;
+  text-align: left;
+}
+
+.item {
+  padding-bottom: 3rem;
+  font-size: 1rem;
+}
+
+
+.first-letter {
+  float: left;
+  font-size: 3.815rem;
+  line-height: 1;
+  margin: .1rem .84rem;
+}
+
+
+@media only screen and (min-width: 900px) {
+.item {
+  font-size: 1.953rem;
+}
+.first-letter {
+  float: left;
+  font-size: 3.052rem;
+  line-height: 1;
+  }
+}

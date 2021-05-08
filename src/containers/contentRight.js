@@ -11,7 +11,6 @@ class ContentRight extends Component{
   }
 
   render() {
-    const { visible } = this.state;
     return(
       <div>
             {this.props.datas.records.filter(item => item.fields.Name === "rightValue").map(item => (

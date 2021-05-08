@@ -26,7 +26,7 @@ class ContentLeft extends Component{
     const { visible } = this.state;
     return(
       <ScrollTrigger onEnter={()=>this.onEnterViewport} onExit={()=>this.onExitViewport}>
-      <div className={this.state.visible ? 'visible' : 'invisible'}>
+      <div>
       {this.props.datas.records.filter(item => item.fields.Name === "leftValue").map(item => (
               <div
                 key={item.fields.H1}
@@ -47,7 +47,7 @@ class ContentLeft extends Component{
               <div className="benefit-illustration-left">
                 <img
                   src={illustration}
-                  className='illustration'
+                  className='illustration-first'
                 />
               </div>
       </div>
