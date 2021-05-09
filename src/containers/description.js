@@ -14,9 +14,9 @@ class Description extends Component{
       <div className="description">
         {this.props.datas.records.filter(item => item.fields.Name === "description").map(item => (
           <div>
-            <div className="item"><span className="first-letter">1</span>{item.fields.H1}</div>
-            <div className="item"><span className="first-letter">2</span>{item.fields.H2}</div>
-            <div className="item"><span className="first-letter">3</span>{item.fields.H3}</div>
+            <div className="item">{item.fields.H1}</div>
+            <div className="item">{item.fields.H2}</div>
+            <div className="item">{item.fields.H3}</div>
           </div>
           )
         )}
