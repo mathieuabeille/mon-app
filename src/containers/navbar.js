@@ -29,9 +29,7 @@ function NavBar() {
         </Link>
       </div>
       <div>
-        <NavLink to={`/home`} className="link" activeClassName="active">
-          Home
-        </NavLink>
+
         <NavLink to={`/growth`} className="link" activeClassName="active">
           La Growth Toolbox
         </NavLink>
