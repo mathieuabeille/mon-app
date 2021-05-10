@@ -33,7 +33,7 @@ function NavBar() {
           Home
         </NavLink>
         <NavLink to={`/growth`} className="link" activeClassName="active">
-          Growth
+          La Growth Toolbox
         </NavLink>
       </div>
     </div>

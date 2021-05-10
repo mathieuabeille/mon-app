@@ -10,9 +10,12 @@ import reduxPromise from 'redux-promise';
 
 
 import datasReducer from './reducers/index.js';
+import toolsReducer from './reducers/toolbox.js';
+
 
 const reducers = combineReducers({
-  datas: datasReducer
+  datas: datasReducer,
+  tools: toolsReducer
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

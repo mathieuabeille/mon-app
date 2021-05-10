@@ -1,33 +1,62 @@
 import React, {Component} from 'react';
-import '../stylesheets/home.css';
-
-
+import '../stylesheets/growth.css';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
+import { fetchTool } from '../actions/toolbox.js'
+import logo from '../assets/logo.png';
+import Cards from '../containers/cards.js';
 
 class Growth extends Component{
 
+componentWillMount() {
+   this.props.fetchTool();
+ }
+
+ loading() {
+  if(this.props.tools.records) {
+        return (
+        <div>
+          <h1>La Growths Tools Box</h1>
+          <h2>Design & Landing Page</h2>
+
+          <Cards
+            tools={this.props.tools}
+            />
+         </div>
+        )
+  }
+  else {
+      return (
+        <div
+         className='loading'
+        >
+        <img
+        src={logo}
+        className='App-logo'
+        alt='Logo Napoleon Agency'
+        />
+        </div>
+        )
+    }
+ }
+
   render() {
       return (
-        <>
-          <div>
-          lorem Our header component contains BrowserRouter, Switch and Route imported from the 'react-router-dom' library which provide the essential routing functionalities. BrowserRouter contains a list of Route components. When the browser's location matches the path, the component will be displayed.
-          </div>
-           <div>
-          lorem Our header component contains BrowserRouter, Switch and Route imported from the 'react-router-dom' library which provide the essential routing functionalities. BrowserRouter contains a list of Route components. When the browser's location matches the path, the component will be displayed.
-          </div>
-           <div>
-          lorem Our header component contains BrowserRouter, Switch and Route imported from the 'react-router-dom' library which provide the essential routing functionalities. BrowserRouter contains a list of Route components. When the browser's location matches the path, the component will be displayed.
-          </div>
-           <div>
-          lorem Our header component contains BrowserRouter, Switch and Route imported from the 'react-router-dom' library which provide the essential routing functionalities. BrowserRouter contains a list of Route components. When the browser's location matches the path, the component will be displayed.
-          </div>
-           <div>
-          lorem Our header component contains BrowserRouter, Switch and Route imported from the 'react-router-dom' library which provide the essential routing functionalities. BrowserRouter contains a list of Route components. When the browser's location matches the path, the component will be displayed.
-          </div>
-        </>
+        this.loading()
       );
   }
 }
 
 
+function mapDispatchToProps(dispatch) {
+ return bindActionCreators({ fetchTool }, dispatch);
+}
 
-export default Growth;
+function mapStateToProps(state) {
+ return {
+  tools: state.tools
+ };
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Growth);
