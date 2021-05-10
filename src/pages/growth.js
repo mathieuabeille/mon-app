@@ -16,12 +16,28 @@ componentWillMount() {
   if(this.props.tools.records) {
         return (
         <div>
-          <h1>La Growths Tools Box</h1>
-          <h2>Design & Landing Page</h2>
-
+          <h1>Notre boîte à outil</h1>
+          <br/><br/>
+          <h2>Pour les sites internets</h2>
           <Cards
             tools={this.props.tools}
             />
+          <br/><br/>
+          <h2>Pour l'obtention de nouveaux prospects</h2>
+          <Cards
+            tools={this.props.tools}
+            />
+          <br/><br/>
+          <h2>Pour dynamiser vos ventes en ligne</h2>
+          <Cards
+            tools={this.props.tools}
+            />
+          <br/><br/>
+          <h2>Pour votre e-réputation</h2>
+          <Cards
+            tools={this.props.tools}
+            />
+         <br/><br/>
          </div>
         )
   }

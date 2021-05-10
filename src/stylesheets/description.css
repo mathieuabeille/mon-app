@@ -6,27 +6,14 @@
   text-align: left;
 }
 
-.item {
-  padding-bottom: 3rem;
-  font-size: 1rem;
-}
+  .item {
+    padding-bottom: 3rem;
+    font-size: 3.052rem;
+  }
 
 
-.first-letter {
-  float: left;
-  font-size: 3.815rem;
-  line-height: 1;
-  margin: .1rem .84rem;
-}
-
-
-@media only screen and (min-width: 900px) {
-.item {
-  font-size: 1.953rem;
-}
-.first-letter {
-  float: left;
-  font-size: 3.052rem;
-  line-height: 1;
+@media (min-width: 900px) {
+  .item {
+    font-size: 2.441rem;
   }
 }

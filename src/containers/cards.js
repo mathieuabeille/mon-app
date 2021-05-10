@@ -16,6 +16,7 @@ class Cards extends Component{
         {this.props.tools.records.map(item => (
           <Card
             item={item}
+            key={item.id}
           />
        ))}
       </div>

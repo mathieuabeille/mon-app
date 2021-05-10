@@ -15,31 +15,4 @@
 .btn-flat:hover {
   background: #E1F2FF;
 }
-.btn-yellow {
-  color: #F7FAFC;
-  padding: 0.41rem 0.64rem;
-  border-radius: 5px;
-  background: rgb(27, 32, 45);
-  font-size: 0.8rem;
-  font-weight:600;
-  cursor: pointer;
 
-  transition: background 0.3s ease;
-}
-@media only screen and (min-width: 900px) {
-.btn-yellow {
-  background: #F7FAFC;
-  padding: 0.64rem 1.25rem;
-  border-radius: 5px;
-  background: rgb(27, 32, 45);
-  font-size: 1rem;
-  font-weight:600;
-  transition: background 0.3s ease;
-}
-}
-
-.btn-yellow:hover {
-  transition: background 0.3s ease;
-  box-shadow: 0 0 30px rgba(27, 32, 45,0.5);
-
-}

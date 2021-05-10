@@ -8,7 +8,13 @@ function Calendly() {
 
   return(
     <div className="calendly">
-      <InlineWidget url="https://calendly.com/mathieu-abeille/30-minutes-growth-avec-mathieu-prasith" />
+      <InlineWidget
+        url="https://calendly.com/mathieu-abeille/30-minutes-growth-avec-mathieu-prasith"
+        styles={{
+          height: '1000px'
+          }}
+
+      />
     </div>
     )
   };

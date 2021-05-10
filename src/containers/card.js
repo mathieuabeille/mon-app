@@ -17,7 +17,7 @@ class cardsToolBox extends Component{
           <div className="card-product-infos">
             <h2>{this.props.item.fields.Name}</h2>
             <p>{this.props.item.fields.Description}</p>
-            <p><a href={this.props.item.fields.Lien} target="_blank" className="btn-card">Visiter</a></p>
+            <a href={this.props.item.fields.Lien} target="_blank" className="btn-card">Visiter</a>
           </div>
         </div>
       </div>

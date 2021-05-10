@@ -13,10 +13,13 @@ class Description extends Component{
     return(
       <div className="description">
         {this.props.datas.records.filter(item => item.fields.Name === "description").map(item => (
-          <div>
+          <div
+            key={item.id}
+            >
             <div className="item">{item.fields.H1}</div>
             <div className="item">{item.fields.H2}</div>
             <div className="item">{item.fields.H3}</div>
+            <div className="item">{item.fields.CTA}</div>
           </div>
           )
         )}

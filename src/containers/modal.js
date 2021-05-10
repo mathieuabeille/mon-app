@@ -16,7 +16,6 @@ const customStyles = {
     border                : 'none',
     background            : '#FFF',
     boxShadow: '0 0 15px rgba(0,0,0,0.2)',
-
     marginRight           : '-50%',
     transform             : 'translate(-50%, -50%)'
   }
@@ -49,7 +48,11 @@ var subtitle;
         >
                   <div className='btn-flat' onClick={closeModal}>Fermer</div>
 
-          <InlineWidget url="https://calendly.com/mathieu-abeille/30-minutes-growth-avec-mathieu-prasith" />
+          <InlineWidget
+          styles={{
+                height: '10000px'
+                }}
+          url="https://calendly.com/mathieu-abeille/30-minutes-growth-avec-mathieu-prasith" />
         </Modal>
       </div>
     );

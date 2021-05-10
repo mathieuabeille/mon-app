@@ -2,7 +2,7 @@
   height: 8vh;
   position: sticky;
   top: 0px;
-  background: #F7FAFC;
+  background: #F5F5F7;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -11,7 +11,7 @@
   border-radius: 0px;
   font-weight: 900;
   letter-spacing: 2px;
-  background: #F7FAFC;
+  background: #F5F5F7;
   width: 100vw;
   margin: auto;
   font-size: 1.563rem;
@@ -57,7 +57,7 @@
   height: 5vh;
   position: sticky;
   top: 0px;
-  background: #F7FAFC;
+  background: #F5F5F7;
   display: flex;
   align-items: center;
   justify-content: space-around;
